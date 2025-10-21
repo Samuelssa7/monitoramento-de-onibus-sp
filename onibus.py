@@ -2,7 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 
-load_dotenv(".env")
+load_dotenv(".env") # o nome dentro do parenteses deve ser o nome do arquivo onde sua chave de API está salva
 
 s = requests.Session()
 res = s.post(
