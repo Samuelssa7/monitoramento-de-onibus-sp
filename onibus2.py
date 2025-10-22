@@ -17,7 +17,7 @@ posicao_atual = pos.json()
 py = posicao_atual["vs"][0]["py"]
 px = posicao_atual["vs"][0]["px"]
 
-'''m = Map(location= py, px, zoom_start=14)
-for i in paradas:
-    Marker(location=[i["py"], i["px"]], popup=i["np"]).add_to(m)'''
-#m.show_in_browser()
+m = Map(location= [py, px], zoom_start=14)
+Marker(location=[py, px], popup=("Ônibus")).add_to(m)
+
+m.show_in_browser()
